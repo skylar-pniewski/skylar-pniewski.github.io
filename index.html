@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<style>
+    .body{
+        width: 90%;
+        height:90%;
+        display:flex;
+        align-items: center;
+        background-color:black;
+    }
+    .unityContainer{
+        width:90%;
+        height:80%;
+        display:inline-flex;
+        padding: 10px;
+        border: 5px solid grey;
+        border-radius: 5px;
+    }
+</style>
+
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -13,8 +31,8 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content" style="width:90%; height: 90%;">
-      <div id="unityContainer" style="width: 90%; height: 90%;"></div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
